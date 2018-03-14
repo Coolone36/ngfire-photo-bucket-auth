@@ -1,4 +1,11 @@
-<button type="button" [routerLink]="['/signin']" routerLinkActive="active">
-  <p>Sign In</p>
-</button>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+    <span fxHide.xs>Photo Bucket Auth</span>
+    <span fxHide.xs fxFlex></span>
+    <span fxFlex></span>
+  <a mat-button type="button" [routerLink]="['/signin']" routerLinkActive="active">Sign In</a>
+</mat-toolbar>
+<div fxLayoutAlign="center center">
+  <mat-card class="container">
+      <router-outlet></router-outlet>
+  </mat-card>
+</div>
